@@ -54,7 +54,7 @@ VOLUME /etc/kamailio
 # clean
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT ["kamailio", "-DD", "-E"]
+CMD ["kamailio", "-DD", "-E"]
 EOF
 }
 
